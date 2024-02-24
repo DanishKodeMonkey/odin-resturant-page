@@ -14,3 +14,7 @@ and bundle it up neatly using webpack!
 In the end I should have a solid grasp on the usage of the node package manager, webpack, webpack configuration, package management, and have a production layout.
 
 That and freshing up on the DOM manipulation skills is always welcome
+
+# Project status
+
+Still in the works
