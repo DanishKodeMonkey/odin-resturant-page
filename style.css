@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+nav{
+    background-color: rgb(163, 163, 163);
+    >.tabs{
+        background-color: antiquewhite;
+        font-size: 2vw;
+        padding: 1vw;
+        margin: 1vw
+    }
+}
+main{
+    background-color: blanchedalmond;
+    display:flex;
+    justify-content: center;
+
+    text-align: center;
+    height: 100vh;
+
+}
+.headline{
+    font-size: 5vw;
+}
+.image>img{
+    height: 30vh;
+
+}
+.text{
+    font-size: 2vw
+}
