@@ -1,0 +1,19 @@
+{
+  "name": "odin-resturant-page",
+  "version": "1.0.0",
+  "description": "A resturant page exercise in webpack and node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanishKodeMonkey/odin-resturant-page"
+  },
+  "author": "Daniel Ljung Runge @DanishKodeMonkey",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
