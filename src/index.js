@@ -1,11 +1,33 @@
 import homePage from './home.js'
+import aboutPage from './about.js'
+import menuPage from './menu.js'
 
 /* Main page display for the contents of main */
-
 function app() {
-	const content = document.querySelector('.content')
+	window.addEventListener('DOMContentLoaded', homePage())
+	const navBar = document.querySelectorAll('[page]')
 
-	content.appendChild(homePage)
+	navBar.forEach((btn) => {
+		let content = document.querySelector('.content')
+		btn.addEventListener('click', () => {
+			// Reset content to prevent duplicates
+			content.textContent = ''
+			switch (btn.getAttribute('page')) {
+				case 'home':
+					homePage()
+					break
+				case 'about':
+					aboutPage()
+					break
+				case 'menu':
+					menuPage()
+					break
+			}
+		})
+	})
+
+	/* 	console.log(Home)
+	content.appendChild(Home) */
 
 	/* Code to append contents of component page for render */
 }
