@@ -25,10 +25,5 @@ function app() {
 			}
 		})
 	})
-
-	/* 	console.log(Home)
-	content.appendChild(Home) */
-
-	/* Code to append contents of component page for render */
 }
 app()
