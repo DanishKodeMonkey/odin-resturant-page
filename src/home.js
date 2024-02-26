@@ -1,5 +1,4 @@
 import './style.css'
-import myImage from './image.png'
 
 export default function homePage() {
 	// Connect to content element on page.
@@ -7,17 +6,17 @@ export default function homePage() {
 	const homePage = document.createElement('div')
 
 	// Create the contents of the content element for this page
-	const headline = document.createElement('div')
+	const textContent = document.createElement('div')
+	const headline = document.createElement('h1')
 	headline.classList.add('headline')
-	headline.textContent = 'The resturant page home paage page!'
+	headline.textContent = 'Welcome to the coffee lovers Cafe!'
 
-	const theImage = new Image()
-	theImage.src = myImage
-
-	const text = document.createElement('div')
-	text.textContent = 'What a wonderfully basic DOM manipulation page site!'
+	const text = document.createElement('p')
+	text.textContent = 'Here at the coffee lovers cafe, we too love coffee! \r\n'
+	text.textContent += 'Have a look around! \r\n'
 	text.classList.add('text')
 
-	homePage.append(headline, theImage, text)
+	textContent.append(headline, text)
+	homePage.appendChild(textContent)
 	content.appendChild(homePage)
 }

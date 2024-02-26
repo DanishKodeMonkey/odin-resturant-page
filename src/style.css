@@ -1,34 +1,90 @@
+html,body{
+    height:100%
+}
 body{
     margin:0;
     padding:0;
+    background: hsla(17, 32%, 46%, 1);
+
+    background: linear-gradient(135deg, hsla(17, 32%, 46%, 1) 34%, hsla(24, 22%, 33%, 1) 81%);
+    
+    background: -moz-linear-gradient(135deg, hsla(17, 32%, 46%, 1) 34%, hsla(24, 22%, 33%, 1) 81%);
+    
+    background: -webkit-linear-gradient(135deg, hsla(17, 32%, 46%, 1) 34%, hsla(24, 22%, 33%, 1) 81%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9C6651", endColorstr="#685142", GradientType=1 );
+    display: flex;
+    flex-direction: column;
 }
 header{
-    background-color: beige;
+    height: 15vh;
+    background-image:url('../src/assets/images/logo.jpg');
+    image-rendering: optimizeSpeed;
+    background-clip:padding-box;
+    background-size:cover;
+    background-position:left;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1vw;
-}
-nav{
-    background-color: rgb(163, 163, 163);
-    >.tabs{
-        background-color: antiquewhite;
-        font-size: 2vw;
-        padding: 1vw;
-        margin: 1vw
+    border-bottom: 5px solid grey;
+    >p{
+        color: whitesmoke;
+        text-shadow: 5px 5px 5px black;
+        font-size: 5vw;
+        margin:0
     }
 }
+nav{
+    width: 100vw;
+    background-color: rgba(163, 163, 163, 0.363);
+    >.tabs{
+        background-color: antiquewhite;
+        font-size: clamp(30px, 1.5vw, 50px);
+        padding: .2vw;
+        margin: .5vw;
+        border-radius:10px;
+        transition: 200ms ease-in-out;
+        border: 2px solid rgba(75, 75, 75, 0.116);
+
+    }
+}
+.tabs:hover{
+    color: white;
+    background-color: rgb(116, 70, 14);
+    scale:120%;
+}
 main{
-    background-color: blanchedalmond;
     display:flex;
     justify-content: center;
-
     text-align: center;
     height: 100vh;
+    margin:0;
+    padding: 0;
+    
 
 }
+.content{
+    width: 80vw;
+    color: blanchedalmond;
+    background-color: rgba(92, 64, 48, 0.493);
+    box-shadow: 0 0 50px rgba(92, 64, 48);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow:scroll;
+
+}
+.textContent{
+    display:flex;
+    justify-content: center;
+}
 .headline{
-    font-size: 5vw;
+    font-size: 4vw;
+    padding:2vh;
 }
 .image>img{
     height: 30vh;
@@ -36,4 +92,13 @@ main{
 }
 .text{
     font-size: 2vw
+}
+footer{
+    font-size: 8px;
+    color: aliceblue;
+    background-color: rgba(163, 163, 163, 0.363);
+    transition: 500ms ease-in-out;
+}
+footer:hover{
+    font-size: 20px;
 }
