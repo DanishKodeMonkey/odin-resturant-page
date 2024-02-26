@@ -15,6 +15,6 @@ In the end I should have a solid grasp on the usage of the node package manager,
 
 That and freshing up on the DOM manipulation skills is always welcome
 
-# Project status
+# Check it out!
 
-Still in the works
+As always, check it out [here](https://danishkodemonkey.github.io/odin-resturant-page/)
