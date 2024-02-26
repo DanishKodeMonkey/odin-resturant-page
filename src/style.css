@@ -66,16 +66,17 @@ main{
 
 }
 .content{
+    height:75vh;
     width: 80vw;
     color: blanchedalmond;
     background-color: rgba(92, 64, 48, 0.493);
     box-shadow: 0 0 50px rgba(92, 64, 48);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     text-align: center;
-    overflow:scroll;
+    overflow-y: scroll;
 
 }
 .textContent{
@@ -86,12 +87,10 @@ main{
     font-size: 4vw;
     padding:2vh;
 }
-.image>img{
-    height: 30vh;
 
-}
 .text{
-    font-size: 2vw
+    font-size: 2vw;
+    margin-bottom: 5%;
 }
 footer{
     font-size: 8px;
@@ -100,5 +99,6 @@ footer{
     transition: 500ms ease-in-out;
 }
 footer:hover{
+    position:sticky;
     font-size: 20px;
 }

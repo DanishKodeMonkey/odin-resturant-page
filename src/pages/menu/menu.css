@@ -1,0 +1,21 @@
+.image{
+    height: 30vh;
+    width: 100%;
+    image-rendering: optimizeSpeed;
+    object-fit: cover;
+    border-radius: 50px 50px 0 0;
+}
+.menuItem{
+    background-color: rgba(255, 153, 20, 0.342);
+    border-radius:50px;
+    transition: 500ms ease-in-out;
+}
+.menuItem:hover{
+    scale:120%;
+}
+.menu{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 5%;
+    margin: 0 5%;
+}

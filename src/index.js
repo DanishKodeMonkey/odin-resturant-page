@@ -1,6 +1,6 @@
-import homePage from './home.js'
-import aboutPage from './about.js'
-import menuPage from './menu.js'
+import homePage from './pages/home/home.js'
+import aboutPage from './pages/about/about.js'
+import menuPage from './pages/menu/menu.js'
 
 /* Main page display for the contents of main */
 function app() {
